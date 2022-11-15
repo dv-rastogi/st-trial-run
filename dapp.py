@@ -45,7 +45,7 @@ class Net(nn.Module):
 def train(args, model, device, train_loader, optimizer, epoch):
     model.train()
     for (_, _) in tqdm(train_loader):
-        pass
+        time.sleep(10)
         # MODEL TRAINING HERE
         # data, target = data.to(device), target.to(device)
         # optimizer.zero_grad()
@@ -73,7 +73,7 @@ def test(model, device, test_loader):
     correct = 0
     with torch.no_grad():
         for data, target in test_loader:
-            pass
+            time.sleep(10)
             # MODEL TESTING HERE
             # data, target = data.to(device), target.to(device)
             # output = model(data)
