@@ -12,7 +12,7 @@ from tqdm import tqdm
 # --- scaletorch change ---
 import scaletorch as st
 
-st.init(use_dapp=True, torch_rng_seed=None)
+st.init(gt2_override=True, use_dapp=True, torch_rng_seed=None)
 # --- scaletorch change ---
 
 
